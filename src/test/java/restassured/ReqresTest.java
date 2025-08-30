@@ -44,13 +44,15 @@ public class ReqresTest {
         Integer id = 4;
         String token = "QpwL5tke4Pnpja7X4";
         Register user = new Register("eve.holt@reqres.in", "pistol");
-        SuccessReg successReq = given()
-                .header("x-api-key", "reqres-free-v1")
-                .body(user)
+        SuccessReg successReq =
+                given()
+                    .header("x-api-key", "reqres-free-v1")
+                    .body(user)
                 .when()
-                .post("api/register")
-                .then().log().all()
-                .extract().as(SuccessReg.class);
+                    .post("api/register")
+                .then()
+                    .log().all()
+                    .extract().as(SuccessReg.class);
 
         Assert.assertNotNull(successReq.getId());
         Assert.assertNotNull(successReq.getToken());

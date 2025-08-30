@@ -1,5 +1,6 @@
 package hh;
 
+import core.BaseTest;
 import junit.framework.Assert;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.junit.jupiter.api.Test;
