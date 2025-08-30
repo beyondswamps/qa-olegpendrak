@@ -30,6 +30,11 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.35.0</version>
+    </dependency>
+    <dependency>
       <groupId>com.codeborne</groupId>
       <artifactId>selenide</artifactId>
       <version>7.9.4</version>
@@ -44,6 +49,11 @@
       <artifactId>rest-assured</artifactId>
       <version>5.5.6</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.typesafe</groupId>
+      <artifactId>config</artifactId>
+      <version>1.4.3</version>
     </dependency>
   </dependencies>
 </project>
