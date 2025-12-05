@@ -13,7 +13,12 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'ssh git@github.com'
+                sh 'hostname'
+            }
+        }
+        stage("Second step") {
+            steps {
+                sh 'uptime'
             }
         }
     }
