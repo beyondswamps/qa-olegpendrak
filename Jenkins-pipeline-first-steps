@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'ssh github.com-beyondswamps'
+                sh 'ssh github.com'
             }
         }
     }
